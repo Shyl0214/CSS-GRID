@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=REM:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "REM", sans-serif;
+  font-size: 1rem;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.left-container {
+  flex-basis: 30%;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.sub-heading {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.right-container {
+  flex-basis: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 120px;
+  /* grid-template-rows: repeat(4,120px); */
+  gap: 4px;
+}
+
+.box {
+  background-size: cover;
+  background-position: top;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#one {
+  grid-row: 1 / span 2;
+}
+
+#two {
+  grid-column: 2 / span 2;
+}
+
+#four {
+  grid-row: span 2;
+}
+
+#five {
+  grid-column: span 2;
+}
+
+#seven {
+  grid-column: 2 / span 2;
+  background-position: center;
+}
+
+#seven:hover {
+  background-position: bottom;
+}
+
+#six {
+  background-position: bottom;
+}
+
+#six:hover {
+  background-position: bottom;
+}
+
+#two {
+  background-position: bottom;
+}
+
+#two:hover {
+  background-position: left;
+}
+
+#one {
+  background-position: top;
+}
+
+#one:hover {
+  background-position: left;
+}
+
+#six {
+    background-position: bottom;
+  }
+  
+  #six:hover {
+    background-position: left;
+  }
+
+.box:hover {
+  cursor: pointer;
+  background-position: center;
+ 
+}
